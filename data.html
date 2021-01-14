@@ -1,9 +1,0 @@
-{% extends "layout.html" %}
-{% block content %}
-<div class="content-section">
-    {% for entry in entries %}
-        <h5><a href="{{ entry.link }}">{{ entry.title }}</a></h5>
-        <p>{{ entry.description }}</p>
-    {% endfor %}
-</div>
-{% endblock content %}
