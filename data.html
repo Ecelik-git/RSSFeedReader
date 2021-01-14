@@ -1,0 +1,7 @@
+{% extends "layout.html" %}
+{% block content %}
+    {% for entry in entries %}
+        <h5><a href="{{ entry.link }}">{{ entry.title }}</a></h5>
+        <p>{{ entry.description }}</p>
+    {% endfor %}
+{% endblock content %}
